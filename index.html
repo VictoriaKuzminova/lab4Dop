@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculate Square</title>
+
+  <script>
+  function calculates(a, b) {
+    let s = parseFloat(a) * parseFloat(b);
+    if (isNaN(s)) {
+      s = "Не введены числа";
+    }
+    return s;
+  }
+  </script>
+
+  <style>
+    * {font-family: "Courier New", monospace; font-size: 16px;}
+    input, button {width: 200px; margin: 1px;}
+  </style>
+
+</head>
+
+<body>
+<p>
+  Длина : <input type="text" name="a" id="a"><br>
+  Ширина: <input type="text" name="b" id="b"><br>
+  ....... <button onclick='document.getElementById("s").value =
+  calculates(document.getElementById("a").value,
+  document.getElementById("b").value)'>Вычислить площадь</button><br>
+  Площадь:<input type="text" name="s" id="s" disabled>
+</p>
+</body>
+
+</html>
